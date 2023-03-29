@@ -19,3 +19,18 @@ f(x) = a0/2 + Σ(ancos(nωx) + bnsin(nωx)), donde:
 * n es el número de la componente armónica, que puede ser cualquier número entero positivo.
 
 La suma de Fourier se representa como una serie infinita, que incluye términos para todas las frecuencias armónicas posibles. En la práctica, es necesario truncar la serie a un número finito de términos para obtener una aproximación útil de la función original. El número de términos necesarios depende de la complejidad de la función y de la precisión requerida en la aproximación.
+
+# EJEMPLOS
+
+## EJEMPLO 1
+
+En este ejemplo, se define una señal periódica como una suma de tres senos de diferentes frecuencias. Luego se calculan los coeficientes de Fourier utilizando la integración numérica, y se usa la serie de Fourier truncada a 20 términos para aproximar la señal original. Finalmente, se grafican ambas señales para comparar la aproximación con la señal original.
+
+![image](https://user-images.githubusercontent.com/91994346/228426861-e96a6b68-5df7-4cf2-9fd4-e456fa771396.png)
+
+## EJEMPLO 2
+
+En este ejemplo, se define una función fourier_series_coeff que toma una función f y calcula los coeficientes de la serie de Fourier utilizando la fórmula que mencioné en la respuesta anterior. Luego se define la función f que queremos descomponer (en este caso, una función sinusoide con una frecuencia tres veces mayor). Se llama a la función fourier_series_coeff para calcular los coeficientes de la serie de Fourier, y se utiliza una suma de términos sinusoidales para aproximar la función original utilizando la serie de Fourier. Finalmente, se grafican la función original y su aproximación por la serie de Fourier.
+
+![image](https://user-images.githubusercontent.com/91994346/228427655-012cc6c6-9bd5-44d9-9ed7-73174858fcd7.png)
+
